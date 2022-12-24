@@ -640,8 +640,7 @@ body {
 }
 .modal {
   position: absolute;
-  min-height: 528px;
-  min-width: 581px;
+  min-width: 528px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -663,6 +662,7 @@ body {
   align-items: center;
   font-family: sans-serif;
   font-size: 24px;
+  background-color: #ffffff;
 
   transition: translate, color, background-color, box-shadow, border,
     250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -672,7 +672,7 @@ body {
 }
 .modal-btn-close:hover {
   color: #2196f3;
-  background-color: #ffffff;
+  cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .close-icon {
@@ -895,11 +895,10 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
   margin-top: 38px;
 }
 .modal-coment-box textarea {
-
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1087,6 +1086,12 @@ input[type='radio']:checked + label {
   position: relative;
   display: flex;
   justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #757575;
 }
 .modal-comment-container {
   display: block;
@@ -1116,9 +1121,8 @@ input[type='radio']:checked + label {
   fill: #ffffff;
   border: 1px solid #212121;
   border-radius: 3px;
-  margin-right: 7px;
   top: 50%;
-  left: 7%;
+  left: 8px;
   transform: translateY(-50%);
 }
 .modal-checkbox-style:checked + .modal-check-svg {
